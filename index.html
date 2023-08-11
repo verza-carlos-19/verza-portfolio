@@ -38,7 +38,7 @@
     </header>
     <main class="main">
       <section class="main__hero" id="inicio">
-        <img
+        <!-- <img
           class="main__hero--bga"
           src="./imgs/pexels-steve-johnson-9977651.jpg"
           alt=""
@@ -47,7 +47,7 @@
           class="main__hero--bgb"
           src="./imgs/pexels-steve-johnson-9977651.jpg"
           alt=""
-        />
+        /> -->
         <div class="main__hero--info">
           <h1 class="hero__info--encabezado">
             Desarrollo Web Front<span>end</span><br />
@@ -375,37 +375,98 @@
           </div>
         </div>
       </section>
+      <section class="footer__section--contacto" id="contactame">
+        <div class="contacto--box">
+          <form class="contacto--form">
+            <h2>contactame</h2>
+            <input
+              type="text"
+              class="contacto__form--input"
+              placeholder="Nombre"
+            />
+            <input
+              type="email"
+              class="contacto__form--input"
+              placeholder="Email"
+            />
+            <input
+              type="tel"
+              class="contacto__form--input"
+              placeholder="Telefono"
+            />
+            <textarea
+              name=""
+              class="contacto__form--input contacto__form--txt"
+              id=""
+              cols="30"
+              maxlength="50"
+              rows="2"
+              placeholder="mensaje"
+            ></textarea>
+            <input type="submit" class="contacto__form--button" />
+          </form>
+        </div>
+      </section>
+      <!-- <img src="./imgs/fondofooo-8.0.png" alt="" class="footer--bg" /> -->
     </main>
     <footer class="footer">
-      <img src="./imgs/fondofoo.jpg" alt="" class="footer--bg" />
-      <section class="footer__section--contacto" id="contactame">
-        <form class="contacto--form">
-          <h2>contactame</h2>
-          <input
-            type="text"
-            class="contacto__form--input"
-            placeholder="Nombre"
-          />
-          <input
-            type="email"
-            class="contacto__form--input"
-            placeholder="Email"
-          />
-          <input
-            type="tel"
-            class="contacto__form--input"
-            placeholder="Telefono"
-          />
-          <textarea
-            name=""
-            class="contacto__form--input contacto__form--txt"
-            id=""
-            cols="30"
-            rows="5"
-            placeholder="mensaje"
-          ></textarea>
-          <input type="submit" class="contacto__form--button" />
-        </form>
+      <!-- <img src="./imgs/fondofooo-8.0.png" alt="" class="footer--bg" /> -->
+
+      <section class="footer__pie-de-pagina">
+        <div class="pie--box--head">
+          <div class="head__info">
+            <div class="info__box--logo">
+              <h2 class="navbar__logo">VerzaDev</h2>
+              <h3 class="head--encabezado">
+                there's no limit <br />
+                to <span>imagine</span>
+              </h3>
+            </div>
+            <div class="info__box--redes">
+              <h3 class="redes--titulo">sigueme👇</h3>
+              <div class="redes--logos">
+                <a href="" class="logos--icon fa-brands fa-instagram"></a>
+                <a href="" class="logos--icon fa-brands fa-linkedin"></a>
+                <a href="" class="logos--icon fa-brands fa-github"></a
+                ><a
+                  href="https://wa.me/+5492665117725?text=¡Estoy+interesado!"
+                  class="logos--icon fa-brands fa-whatsapp"
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="head__mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42348.847311251724!2d-66.34751433792961!3d-33.29886663425568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1691576502840!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="pie--box--foot">
+          <div class="foot__box--copy">
+            <p>&copy; 2019 VerzaDev. Todos los derechos reservados</p>
+          </div>
+          <div class="foot__box--login">
+            <span class="registro__btn">
+              <a class="login" href="./html/login.html#login">Log In</a>
+              <a class="regis" href="./html/login.html#registrate"
+                >registrate</a
+              >
+            </span>
+          </div>
+          <div class="foot__box--navbar">
+            <ul class="navbar__menu">
+              <li class="menu__link"><a href="#inicio">inicio</a></li>
+              <!-- <li class="menu__link"><a href="#">sobre mi</a></li> -->
+              <li class="menu__link"><a href="#servicios">servicios</a></li>
+              <li class="menu__link"><a href="#proyectos">proyectos</a></li>
+              <li class="menu__link"><a href="#contactame">contactame</a></li>
+            </ul>
+          </div>
+        </div>
       </section>
     </footer>
   </body>
