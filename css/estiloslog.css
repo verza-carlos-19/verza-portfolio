@@ -1,0 +1,159 @@
+:root {
+  --bg: #004643;
+  --main: #e8e4e6;
+  --secondary: #abd1c6;
+  --tertiary: #e16162;
+  --highlight: #f9bc60;
+  --button: #f9bc60;
+  --buttontxt: #001e1d;
+  --titulo: #fffffe;
+  --parrafo: #abd1c6;
+  --stroke: #001e1d;
+  --font1: "Bebas Neue", sans-serif;
+  --font2: "Chakra Petch", sans-serif;
+  --font3: "Share Tech Mono", monospace;
+  --font4: "Tektur", cursive;
+  --fontlogo: "Silkscreen", cursive;
+}
+.navbar--login {
+  justify-content: center;
+  gap: 30%;
+}
+.header {
+  box-shadow: 0 0 1rem var(--main), inset 0 0 0.2rem var(--main);
+}
+.foot--login {
+  justify-content: center;
+  width: 100%;
+}
+.footer--login--info {
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+.footer--logo--login {
+  align-items: center;
+}
+.footer--redes--login {
+  padding: 0;
+}
+.main--registros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  perspective: 1500px;
+}
+#toggle:checked ~ #regis {
+  transform: scale(1) translateX(0%);
+}
+#toggle:checked ~ #login {
+  /* #toggle:checked ~ .login > .registro--form { */
+  transform: scale(0) translateX(-200%);
+}
+#toggle:checked ~ .registros--registros {
+  display: flex;
+}
+#toggle:checked ~ .registros--login {
+  display: none;
+}
+.registros--registros {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+  transition: 0.5s all;
+  transform: scale(0) translateX(-200%);
+}
+
+.registros--login {
+  transition: 0.5s all;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+  transform: scale(1) translateX(0%);
+}
+/* .regis .registro--form {
+  transform: scale(0) translateX(200%);
+} */
+.registro--form {
+  padding: 10vh 5vw;
+  border: 1px solid #60ffff;
+  box-shadow: 0 0 10vw var(--main), inset 0 0 1vw var(--main);
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(5);
+  flex-direction: column;
+  transition: 5s all;
+  display: flex;
+  /* transform: scale(0) translateX(200%); */
+  /* align-items: center; */
+  gap: 5vh;
+}
+.login--form {
+  padding: 10vh 5vw;
+  border: 1px solid #60ffff;
+  box-shadow: 0 0 10vw var(--main), inset 0 0 1vw var(--main);
+  background-color: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(5);
+  flex-direction: column;
+  display: flex;
+  /* align-items: center; */
+  gap: 5vh;
+}
+.form--titulo {
+  font-size: 5vw;
+  font-family: var(--font4);
+  color: var(--main);
+  text-align: center;
+}
+.form--input {
+  width: 35vw;
+  height: 10vh;
+}
+.form--input {
+  background-color: transparent;
+  font-size: 2vw;
+  transition: all 0.8s cubic-bezier(0.86, -0.05, 0.15, 0.94);
+  border: none;
+  font-family: var(--font2);
+  padding: 1rem 0;
+  color: var(--main);
+  outline: none;
+  text-transform: capitalize;
+  border-bottom: 1px solid #60ffff;
+}
+.form--input::-webkit-input-placeholder {
+  color: var(--main);
+  font-family: var(--font2);
+  font-size: 1.5vw;
+  /* padding: 1rem; */
+}
+.registros__form--button {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-family: var(--font2);
+  color: var(--parrafo);
+  border: none;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0 100%, 0 25%);
+  backdrop-filter: blur(6);
+  transition: all 0.3s;
+  border-bottom: 1px solid var(--main);
+}
+.form--label {
+  font-family: var(--font2);
+  color: var(--main);
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+#toggle {
+  /* display: none; */
+}
+.box--button {
+  display: flex;
+  justify-content: center;
+}
