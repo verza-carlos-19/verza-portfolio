@@ -17,8 +17,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Log In</title>
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+
+    <title>registrarse</title>
   </head>
   <body>
     <header class="header">
@@ -28,19 +29,23 @@
     </header>
     <main>
       <section class="main--registros">
-        <div class="registros--login" id="login">
-          <form class="login--form">
-            <h2 class="form--titulo">Log In</h2>
+        <div class="registros--registros" id="regis">
+          <form class="registro--form">
+            <h2 class="form--titulo">registrate</h2>
+            <input type="text" class="form--input" placeholder="Nombre" />
             <input type="email" class="form--input" placeholder="Email" />
+            <input type="tel" class="form--input" placeholder="Telefono" />
             <input
               type="password"
               class="form--input"
               placeholder="Contraseña"
             />
-            <a class="form--label" href="./registrarse.html">registrate👈</a>
+            <a class="form--label" href="./login.html">inicia sesion👈</a>
             <div class="box--button">
+              <!-- <input type="submit" class="registros__form--button" /> -->
+
               <a href="../index.html" class="registros__form--button"
-                >iniciar sesion</a
+                >registrarse</a
               >
             </div>
           </form>

@@ -448,7 +448,6 @@ body::-webkit-scrollbar-thumb {
   /* box-shadow: 0 0 5rem var(--main); */
   animation: rotarycm 3s 0.6s linear infinite alternate;
 }
-
 .body--txt {
   padding: 1.5rem;
   padding-bottom: 0;
@@ -1105,7 +1104,9 @@ body::-webkit-scrollbar-thumb {
   font-family: var(--font2);
   font-size: 1rem;
 }
-
+.project-btn {
+  width: 30%;
+}
 @keyframes rotar {
   0% {
     transform: translateY(0%) scale(1.2) rotate3d(0, 1, 0, -10deg)

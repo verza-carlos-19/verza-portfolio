@@ -1,0 +1,11 @@
+@media (max-width: 960px) {
+  .header--navbar {
+    padding: 0 0.5rem;
+  }
+  .servicios--body {
+    width: 95%;
+  }
+  .body__card--info {
+    position: relative;
+  }
+}
