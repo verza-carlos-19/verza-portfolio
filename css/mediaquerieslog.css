@@ -1,0 +1,25 @@
+@media (max-width: 810px) {
+  .registros__form--button {
+    font-size: 2vw;
+  }
+  .form--label {
+    font-size: 3vw;
+  }
+  .form--input {
+    width: 90%;
+    height: 8vw;
+    font-size: 3vw;
+  }
+  .form--titulo {
+    font-size: 7vw;
+  }
+  .login--form {
+    padding: 10vw 10vw;
+    gap: 2vw;
+    width: 80%;
+    align-items: center;
+  }
+  .registros--login {
+    padding: 18vw 0;
+  }
+}

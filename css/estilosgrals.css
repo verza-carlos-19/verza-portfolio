@@ -65,6 +65,13 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   padding: 0.7rem 0;
 }
+#toggle--burger {
+  display: none;
+}
+.burger {
+  color: var(--main);
+  display: none;
+}
 .box--33p {
   width: 33.3%;
 }
@@ -88,16 +95,7 @@ body::-webkit-scrollbar-thumb {
   /* filter: drop-shadow(0 0 0.7rem #398dfa); */
   /* filter: drop-shadow(0 0 0.7rem #f9bc60);1 */
 }
-.menu__link::before {
-  content: "";
-  width: 3px;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #001e1d;
-  position: absolute;
-  opacity: 0;
-}
+
 .navbar__logo {
   /* color: rgb(0, 0, 0); */
   color: var(--titulo);
@@ -358,7 +356,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150vw;
+  width: 100vw;
   gap: 2rem;
   animation: showym-bot 1.5s 0.5s 1 cubic-bezier(0.075, 0.82, 0.165, 1);
 
@@ -892,7 +890,7 @@ body::-webkit-scrollbar-thumb {
 .contacto--box {
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   perspective: 1000px;
   transition: all 0.5s;
 }
@@ -926,10 +924,10 @@ body::-webkit-scrollbar-thumb {
   width: 50%;
   align-items: center;
   padding: 2rem 0.5rem;
-  /* transition: all 0.5s; */
-
+  transition: all 0.5s;
+  /* 
   perspective: 1000px;
-  transform: rotate3d(0, 1, 0, -40deg);
+  transform: rotate3d(0, 1, 0, -40deg); */
 }
 .contacto--form h2 {
   font-size: 3.5rem;
@@ -942,11 +940,11 @@ body::-webkit-scrollbar-thumb {
   font-family: var(--font2);
   /* padding: 1rem; */
 }
-.contacto--box:hover > .contacto--form > .contacto__form--input:focus {
-  transform: rotate3d(0, 1, 0, 30deg);
+.contacto__form--input:focus {
+  /* transform: rotate3d(0, 1, 0, 30deg);
   font-size: 4rem;
   width: 220%;
-  translate: -75%;
+  translate: -75%; */
   border-bottom: 3px solid #60ffff;
   filter: drop-shadow(0 0 1rem var(--main));
   /* border-color: #abd1c6; */
